@@ -1,0 +1,57 @@
+/* ---------------------------------------------------------------- */
+/* - INFORMATION -------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+/*
+/*   This file should contain only elements' colour information.
+/*   It may contain attributes like borders, where the borders'
+/*   colours are specified.
+/*
+/* ---------------------------------------------------------------- */
+/* -------------------------------------------------- INFORMATION - */
+/* ---------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------- */
+/* Main page sections
+/* ---------------------------------------------------------------- */
+
+#wrapper                            { background-color: #ffffff;     }
+#page                               { background-color: transparent; }
+#main                               { background-color: #ffffff;     }
+header.site-header                  { background-color: #5eabed;     }
+footer.site-footer, .footer-content { background-color: #5eabed;     }
+
+/* ---------------------------------------------------------------- */
+/* Headings and text
+/* ---------------------------------------------------------------- */
+
+/* General headings and text */
+
+h1                     { color: #bada55; }
+h2, h3, h4, h5, h6     { color: #bada55; }
+p                      { color: #6a7b90; }
+ul, ol, li             { color: #6a7b90; }
+
+/* Headings and text on the header and footer */
+
+header.site-header h1       { color: #ffffff; }
+header.site-header p.credit { color: #ffffff; }
+footer.site-footer p        { color: #ffffff; }
+
+/* ---------------------------------------------------------------- */
+/* Text decoration
+/* ---------------------------------------------------------------- */
+
+.page-header {
+	border-bottom: 4px solid #5eabed;
+}
+
+.border.thin.blue {
+	border-top: 1px solid #5eabed;
+	margin-bottom: 20px;
+}
+
+.after-content {
+	border-top: 4px solid #5eabed;
+}
