@@ -16,11 +16,10 @@
 /* Main page sections
 /* ---------------------------------------------------------------- */
 
-#wrapper                            { background-color: #ffffff;     }
-#page                               { background-color: transparent; }
-#main                               { background-color: #ffffff;     }
-header.site-header                  { background-color: #5eabed;     }
-footer.site-footer, .footer-content { background-color: #5eabed;     }
+/*
+header { background-color: #5eabed; }
+footer { background-color: #5eabed; }
+*/
 
 /* ---------------------------------------------------------------- */
 /* Headings and text
@@ -28,21 +27,26 @@ footer.site-footer, .footer-content { background-color: #5eabed;     }
 
 /* General headings and text */
 
+/*
 h1                     { color: #bada55; }
 h2, h3, h4, h5, h6     { color: #bada55; }
 p                      { color: #6a7b90; }
 ul, ol, li             { color: #6a7b90; }
+*/
 
 /* Headings and text on the header and footer */
 
+/*
 header.site-header h1       { color: #ffffff; }
 header.site-header p.credit { color: #ffffff; }
 footer.site-footer p        { color: #ffffff; }
+*/
 
 /* ---------------------------------------------------------------- */
 /* Text decoration
 /* ---------------------------------------------------------------- */
 
+/*
 .page-header {
 	border-bottom: 4px solid #5eabed;
 }
@@ -55,3 +59,28 @@ footer.site-footer p        { color: #ffffff; }
 .after-content {
 	border-top: 4px solid #5eabed;
 }
+*/
+
+/* ---------------------------------------------------------------- */
+/* Sections
+/* ---------------------------------------------------------------- */
+
+#section1    { background-color: #ffffff; }
+#section1 h2 { color:            #6a7b90; }
+#section1 p  { color:            #6a7b90; }
+
+#section2    { background-color: #c3d9db; }
+#section2 h2 { color:            #6a7b90; }
+#section2 p  { color:            #6a7b90; }
+
+#section3    { background-color: #522a2a; }
+#section3 h2 { color:            #ffffff; }
+#section3 p  { color:            #ffffff; }
+
+#section4    { background-color: #522a2a; }
+#section4 h2 { color:            #ffffff; }
+#section4 p  { color:            #ffffff; }
+
+#section5    { background-color: #c3d9db; }
+#section5 h2 { color:            #000000; }
+#section5 p  { color:            #000000; }

@@ -10,7 +10,7 @@
 /* -------------------------------------------------------------------------- INFORMATION - */
 /* ---------------------------------------------------------------------------------------- */
 
-
+.clearboth { clear: both; }
 
 /* ---------------------------------------------------------------- */
 /* Fonts
@@ -26,6 +26,7 @@ h6 { font-size: 12px; }
 /* Google fonts */
 h1, h2, h3, h4, h5, h6 { font-family: 'Coda', cursive; font-style: italic; margin-top: 10px; margin-bottom: 10px; text-transform: uppercase; font-weight: normal; }
 p                      { font-family: "Roboto", Helvetica, Arial, sans-serif; }
+nav p                  { font-family: 'Coda', cursive; margin-top: 10px; margin-bottom: 10px; text-transform: uppercase; font-weight: normal; }
 footer p               { font-family: 'Coda', cursive; margin-top: 10px; margin-bottom: 10px; text-transform: uppercase; font-weight: normal; }
 ul, ol, li             { font-family: "Roboto", Helvetica, Arial, sans-serif; }
 
@@ -166,7 +167,7 @@ header {
 	margin:  0px;
 	padding: 10px 20px 10px 20px;
 	
-	background-color: #999ba2;
+	background-color: #6a7b90;
 }
 
 header h1 {
@@ -190,6 +191,24 @@ header h2 {
 	color: #fff;
 }
 
+/* ---------------------------------------------------------------- */
+/* Navigation
+/* ---------------------------------------------------------------- */
+
+nav {
+	background-color: #6a7b90;
+	padding: 20px;
+	text-align: center;
+}
+
+nav p {
+	color: #fff;
+}
+
+nav p span {
+	margin-left:  2px;
+	margin-right: 2px;
+}
 
 /* ---------------------------------------------------------------- */
 /* Footer
@@ -198,7 +217,7 @@ header h2 {
 footer {
 	padding: 20px;
 	
-	background-color: #999ba2;
+	background-color: #6a7b90;
 }
 
 footer.site-footer {
@@ -214,10 +233,6 @@ footer p {
 	
 	letter-spacing: 1px;
 	
-	/* So there's not too much spacing between this and Hello to Jason Isaacs. */
-	margin-top:    6px;
-	margin-bottom: 3px;
-	
 	color: #fff;
 }
 
@@ -225,6 +240,7 @@ footer p {
 /* To keep footer at bottom of page */
 /* -------------------------------- */
 
+/*
 html, body {
 	margin:  0;
 	padding: 0;
@@ -235,36 +251,49 @@ html, body {
 	position:   relative;
 }
 #page {
-	padding-bottom: 80px; /* This needs to be the same as your footer.site-footer height. */ /* This size is required for two-line footers */
-	padding-bottom: 40px; /* This needs to be the same as your footer.site-footer height. */
+	padding-bottom: 80px; /* This needs to be the same as your footer.site-footer height. */ /* This size is required for two-line footers *
+	padding-bottom: 40px; /* This needs to be the same as your footer.site-footer height. *
 }
 footer.site-footer {
-	height:   80px; /* This needs to be the same as the #page padding-bottom. */ /* This size is required for two-line footers */
-	height:   40px; /* This needs to be the same as the #page padding-bottom. */
+	height:   80px; /* This needs to be the same as the #page padding-bottom. */ /* This size is required for two-line footers *
+	height:   40px; /* This needs to be the same as the #page padding-bottom. *
 	position: absolute;
 	bottom:   0;
 	left:     0;
 }
+*/
 
 /* ---------------------------------------------------------------- */
 /* Sections
 /* ---------------------------------------------------------------- */
 
 .section {
-	background-color: #edf;
+	
+/*
 	margin-left: 20px;
 	margin-right: 20px;
 	margin-bottom: 20px;
+*/
+	
+	width: 100%;
 }
 
 .section.last {
-	margin-bottom: 40px;
+/* 	margin-bottom: 40px; */
 }
 
-#down-to-earth {
-	
+.section .content {
+	padding: 20px;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-#about {
-	
-}
+.section .content .left-45  { float: left;  width: 45%; }
+.section .content .right-45 { float: right; width: 45%; }
+
+.section .content .left-25  { float: left;  width: 25%; }
+.section .content .right-65 { float: right; width: 65%; }
+
+.section .content .left-65  { float: left;  width: 65%; }
+.section .content .right-25 { float: right; width: 25%; }
