@@ -1,0 +1,638 @@
+/* ---------------------------------------------------------------------------------------- */
+/* - INFORMATION -------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+/*   
+/*   This file should contain no information about an element's colour, including border,
+/*   gradients and the like.  Keep colour information in the separate
+/*   style-colour-scheme.css file.
+/*
+/* ---------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- INFORMATION - */
+/* ---------------------------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------------------------------- */
+/* - NOTES -------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+/*
+	
+	x
+	
+*/
+/* ---------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- NOTES - */
+/* ---------------------------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------- */
+/* Resets
+/* ---------------------------------------------------------------- */
+
+*                          { -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; }    /* Remove hyphenation */
+img                        { box-shadow: none; border-radius: 0px; }                        /* Remove standard WordPress styling on images */
+.site-content article      { border: none; }                                                /* Remove double lines after articles */
+a:hover, a:active, a:focus { outline: 0; }                                                  /* Remove focus outline */
+
+/* ---------------------------------------------------------------- */
+/* Useful classes
+/* ---------------------------------------------------------------- */
+
+.clearboth   { clear:   both;  }
+.hidden      { display: none;  }
+.shown       { display: block; }
+
+/* ---------------------------------------------------------------- */
+/* Fonts
+/* ---------------------------------------------------------------- */
+
+h1 { font-size: 29px; }
+h2 { font-size: 22px; }
+h3 { font-size: 18px; }
+h4 { font-size: 16px; }
+h5 { font-size: 14px; }
+h6 { font-size: 12px; }
+
+/* Google fonts */
+h1, h2, h3, h4, h5, h6 { font-family: 'Coda', cursive; font-style: italic; margin-top: 10px; margin-bottom: 10px; text-transform: uppercase; font-weight: normal; }
+p                      { font-family: "Roboto", Helvetica, Arial, sans-serif; }
+ul, ol, li             { font-family: "Roboto", Helvetica, Arial, sans-serif; }
+
+/* Text styles */
+.content p { line-height: 25px; /* text-align: justify; */ /* text-indent: 20px; */ /* Indent body text's first line */ }
+.italic    { font-style: italic; }
+
+/* ---------------------------------------------------------------- */
+/* Paragraph styles
+/* ---------------------------------------------------------------- */
+
+/* Introduction paragraph */
+p.intro {
+	margin-bottom: 40px;
+}
+p.intro {
+	font-size: 19px;
+	font-weight: 700;
+	line-height: 30px;
+}
+
+/* And for the blog page... */
+#main.blog .intro {
+	margin-bottom: 10px;
+}
+
+/* Summary/conclusion paragraph */
+.after-content {
+	margin-top:  50px;
+	padding-top: 30px;
+}
+.after-content p {
+/* 	font-size: 19px; */
+	font-weight: 700;
+	line-height: 30px;
+}
+
+/* Titles with subheadings */
+h2.with-subheading {
+	margin-bottom: 0px;
+}
+h3.subheading {
+	margin-top: 0px;
+	font-size: 12px;
+	font-style: italic;
+}
+
+/* Quotes and citations */
+.content .blockquote {
+	margin:  40px 20px 0px 20px;
+	margin: 20px;
+	padding:  2px 20px;
+	/* border-radius: 10px; */ /* Creates a nice 'bracket' style left border */
+}
+.content .blockquote p {
+	font-style: italic;
+	font-family: "Garamond", Times, serif;
+	font-family: 'Rokkitt', serif;
+	font-family: 'Boogaloo', cursive;
+	font-family: 'Coda', cursive;
+	font-size: 24px;
+	
+	font-size: 18px;
+	margin: 10px 0px 10px 0px;
+/* 	text-indent: 1em; */
+}
+.content .citation p {
+	font-style: normal;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	margin-top: 0px;
+	
+	text-transform: uppercase;
+	font-size: 12px;
+}
+.content .citation.left    { margin:  0px 70px 40px 45px; }
+.content .citation.right   { margin:  0px 70px 40px 70px; }
+.content .citation.left  p { text-align: left;  }
+.content .citation.right p { text-align: right; }
+
+/* ---------------------------------------------------------------- */
+/* Links
+/* ---------------------------------------------------------------- */
+
+a:link           { text-decoration: none; }
+a:visited        { text-decoration: none; }
+a:hover          { text-decoration: none; }
+a:active         { text-decoration: none; }
+
+footer a:link    { text-decoration: underline; }
+footer a:visited { text-decoration: underline; }
+footer a:hover   { text-decoration: underline; }
+footer a:active  { text-decoration: underline; }
+
+#main p a        { font-weight: 700; }
+
+/* ---------------------------------------------------------------- */
+/* Dividers
+/* ---------------------------------------------------------------- */
+
+.divider {
+	margin-top:    30px;
+	margin-bottom: 30px;
+}
+
+/* ---------------------------------------------------------------- */
+/* Background images
+/* ---------------------------------------------------------------- */
+
+/*
+#page, #main { background-color: transparent; }
+body {
+	background-image: url("http://danielpoore.com/wp-content/themes/dp/images/starfield.jpg");
+	background-repeat: repeat;
+}
+*/
+
+/* Background image at the bottom of the page */
+/*
+body, #page, #main { background-color: transparent; }
+html {
+	background-image: url("http://danielpoore.com/wp-content/themes/dp/images/fadeup.png");
+	background-repeat: repeat-x;
+	background-position: center bottom;
+}
+*/
+
+/* ---------------------------------------------------------------- */
+/* Buttons
+/* ---------------------------------------------------------------- */
+
+/*
+	Buttons will be identified by the .button class and styled by
+	their accompanying class(es) e.g. .button.red.large
+*/
+
+.button {
+	padding:       0px 20px;
+	border-radius: 8px;
+	float:         left;
+	margin-bottom: 20px;
+}
+.button p {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/* Sizes */
+.button.size100 { width: 100px; }
+.button.size200 { width: 200px; }
+.button.size300 { width: 300px; }
+
+
+/* ---------------------------------------------------------------- */
+/* Page layout and sections setup
+/* ---------------------------------------------------------------- */
+
+body {
+	margin:  0px;
+	padding: 0px;
+}
+
+#page {
+	margin:  20px auto 0px auto;
+	padding: 0px;
+}
+
+#main {
+	margin:  0px 0px 40px 0px;
+	padding: 20px;
+}
+
+/* ------------------------- */
+/* Set the maximum page size */
+/* ------------------------- */
+
+/*
+	The page section will be centred on the screen, unless the screen 
+	is less than the maximum set here, in which case it will fill the
+	space available.
+*/
+
+#page, #main {
+	max-width:    1000px;
+	margin-left:  auto;
+	margin-right: auto;
+}
+
+/* ---------------------------------------------------------------- */
+/* Header
+/* ---------------------------------------------------------------- */
+
+header.site-header {
+	margin:  0px;
+	padding: 20px 20px 10px 20px;
+}
+
+header.site-header h1 {
+	text-align: center;
+	word-break: break-word;
+	margin-bottom: 0px;
+}
+
+header.site-header h1 {
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
+header.site-header p.credit {
+	margin-top:    0px;
+	margin-bottom: 0px;
+	text-align: center;
+	
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
+/* ---------------------------------------------------------------- */
+/* Switch from desktop to mobile navbar menus
+/* ---------------------------------------------------------------- */
+
+nav.desktop { display: block; }
+nav.mobile  { display: none;  }
+
+/* ---------------------------------------------------------------- */
+/* Navbar
+/* ---------------------------------------------------------------- */
+
+nav {
+	text-align: center;
+}
+
+nav ul {
+	list-style: none;
+	margin:  0px;
+	padding: 0px;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 10px;
+	margin-top: 4px;
+}
+nav ul li a {
+	padding: 10px;
+	text-transform: uppercase;
+	border-radius: 8px 8px 0px 0px;
+}
+
+/* Submenus */
+.submenu {
+	position: absolute;
+	margin-top: 14px;
+	width: 107px;
+	margin-left: 10px;
+}
+.submenu li {
+	padding: 0px;
+}
+.submenu li a {
+	display: block;
+	margin-left: -10px;
+	text-align: left;
+	text-transform: none;
+	width: 165px;
+}
+
+/* Showing submenus */
+nav li {
+	position: relative;
+}
+nav li ul {
+	display: none;
+	position: absolute;
+	z-index: 1;
+}
+nav ul li:hover > ul {
+	display: block;
+}
+
+/* ---------------------------------------------------------------- */
+/* Mobile Nav Buttons
+/* ---------------------------------------------------------------- */
+
+/* Show/hide button */
+.mobile-menu-show-hide {
+	width: 100px;
+	height: 14px;
+	margin-left:  auto;
+	margin-right: auto;
+	border-radius: 8px 8px 0px 0px;
+	padding: 10px;
+}
+.mobile-menu-show-hide p {
+	margin: 0px;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+.mobile-menu-show-hide:hover {
+	cursor: pointer;
+}
+
+.mobile-menu.inactive { display: none;  }
+.mobile-menu.active   { display: block; }
+
+/* Parent item styling */
+.mob-nav-button {
+	padding: 10px 20px;
+}
+.mob-nav-button p {
+	margin: 0px;
+	text-align: left;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+/* Child item styling */
+.child-item .mob-nav-button p:before {
+	content: "– ";
+}
+
+/* ---------------------------------------------------------------- */
+/* Footer
+/* ---------------------------------------------------------------- */
+
+footer.site-footer {
+	margin:  0px;
+	padding: 10px 0px;
+	width:   100%;
+}
+.footer-content {
+	padding: 0px 20px;
+}
+
+footer p {
+	font-size:  12px;
+	text-align: center;
+	text-indent: 0px;
+	
+	/* So there's not too much spacing between this and Hello to Jason Isaacs. */
+	margin-top: 6px;
+	margin-bottom: 3px;
+}
+
+.htji {
+	font-size: 10px;
+	margin-top: 0px;
+}
+footer .htji a {
+	text-decoration: none;
+}
+footer .htji a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+/* -------------------------------- */
+/* To keep footer at bottom of page */
+/* -------------------------------- */
+
+html, body {
+	margin:  0;
+	padding: 0;
+	height:  100%;
+}
+#wrapper {
+	min-height: 100%;
+	position:   relative;
+}
+#page {
+	padding-bottom: 80px; /* This needs to be the same as your footer.site-footer height. */ /* This size is required for two-line footers */
+	padding-bottom: 40px; /* This needs to be the same as your footer.site-footer height. */
+}
+footer.site-footer {
+	height:   80px; /* This needs to be the same as the #page padding-bottom. */ /* This size is required for two-line footers */
+	height:   40px; /* This needs to be the same as the #page padding-bottom. */
+	position: absolute;
+	bottom:   0;
+	left:     0;
+}
+
+/* ---------------------------------------------------------------- */
+/* Articles
+/* ---------------------------------------------------------------- */
+
+article {
+	padding-bottom: 10px;
+	margin-bottom:  30px;
+	word-break:     break-word;
+}
+article img {
+	max-width: 100%;
+	height:    auto;
+}
+
+/* ---------------------------------------------------------------- */
+/* Categories and tags
+/* ---------------------------------------------------------------- */
+
+.category, .tag {
+	padding: 4px 10px 4px 8px;
+	display: inline-block;
+	margin-right: 5px;
+	
+	-moz-border-radius-topright:        10px;
+	-webkit-border-top-right-radius:    10px;
+	border-top-right-radius:            10px;
+	-moz-border-radius-bottomright:     10px;
+	-webkit-border-bottom-right-radius: 10px;
+	border-bottom-right-radius:         10px;
+	
+	-moz-border-radius:    3px;
+	-webkit-border-radius: 3px;
+	border-radius:         3px;
+}
+.category p, .tag p {
+	font-size: 12px;
+	margin: 0px;
+	text-transform: uppercase;
+	font-style: italic;
+}
+
+/* ---------------------------------------------------------------- */
+/* Featured images
+/* ---------------------------------------------------------------- */
+
+.featured-image-frame {
+	width: 100%;
+	height: auto;
+	
+	max-width: 960px;
+	
+	overflow: hidden;
+	
+	margin-top: -40px;
+	margin-bottom: 50px;
+}
+
+.featured-image-frame img {
+	width: 100%;
+	height: auto;
+}
+
+/* ---------------------------------------------------------------- */
+/* News article
+/* ---------------------------------------------------------------- */
+
+.news-article {
+	padding-bottom: 20px;
+}
+
+/* ---------------------------------------------------------------- */
+/* Other work
+/* ---------------------------------------------------------------- */
+
+.copyright {
+	font-size: 12px;
+	text-align: right;
+}
+
+/* ---------------------------------------------------------------- */
+/* Characters
+/* ---------------------------------------------------------------- */
+
+.top-margin {
+	margin-top: 60px;
+}
+
+.character-image-frame {
+	width:  180px;
+	height: 180px;
+	float: left;
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+.character-image-frame img {
+	width:  180px;
+	height: 180px;
+}
+
+.character-bio p {
+	margin-top: 0px;
+}
+
+/* ---------------------------------------------------------------- */
+/* Glossary
+/* ---------------------------------------------------------------- */
+
+.glossary .links {
+	text-align: center;
+	font-size: 18px;
+	font-style: italic;
+}
+
+.glossary .link-button {
+	border-radius: 6px;
+	display: inline-block;
+	margin-left:  2px;
+	margin-right: 2px;
+	padding: 2px;
+	width: 30px;
+}
+.glossary .link-button p {
+	color: #fff;
+	margin: 0px;
+}
+
+.glossary .link-button:hover p {
+	color: #fff;
+}
+
+.glossary .initial {
+	font-size: 40px;
+	font-style: italic;
+	margin-bottom: 0px;
+}
+
+.back-to-top-link {
+	font-size: 11px;
+	text-transform: uppercase;
+}
+
+/* ---------------------------------------------------------------- */
+/* Blog navigation links
+/* ---------------------------------------------------------------- */
+
+.blog-nav {
+	width: 50%;
+}
+
+.blog-nav.new {
+	text-align: left;
+	float: left;
+}
+
+.blog-nav.old {
+	text-align: right;
+	float: right;
+}
+
+/* Tags section */
+.tags {
+	margin-top: 20px;
+}
+
+/* ---------------------------------------------------------------- */
+/* Inset boxes
+/* ---------------------------------------------------------------- */
+
+.inset-box {
+	max-width: 320px;
+	padding: 10px 20px;
+}
+
+.inset-box.left {
+	float: left;
+	margin-right: 20px;
+}
+
+.inset-box.right {
+	float: right;
+	margin-left: 20px;
+}
+
+.inset-box p {
+	
+}
+
+.fixed-image-frame {
+	width: 100%;
+}
+.fixed-image-frame img {
+	width: 100%;
+	height: auto;
+}
+
+/* ---------------------------------------------------------------- */
+/* For SEO purposes only
+/* ---------------------------------------------------------------- */
+
+.placement { display: none; }
