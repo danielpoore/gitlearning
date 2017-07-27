@@ -1,0 +1,270 @@
+/* ---------------------------------------------------------------------------------------- */
+/* - INFORMATION -------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+/*   
+/*   This file should contain no information about an element's colour, including border,
+/*   gradients and the like.  Keep colour information in the separate
+/*   style-colour-scheme.css file.
+/*
+/* ---------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- INFORMATION - */
+/* ---------------------------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------- */
+/* Fonts
+/* ---------------------------------------------------------------- */
+
+h1 { font-size: 24px; }
+h2 { font-size: 16px; }
+h3 { font-size: 18px; }
+h4 { font-size: 16px; }
+h5 { font-size: 14px; }
+h6 { font-size: 12px; }
+
+/* Google fonts */
+h1, h2, h3, h4, h5, h6 { font-family: 'Coda', cursive; font-style: italic; margin-top: 10px; margin-bottom: 10px; text-transform: uppercase; font-weight: normal; }
+p                      { font-family: "Roboto", Helvetica, Arial, sans-serif; }
+footer p               { font-family: 'Coda', cursive; margin-top: 10px; margin-bottom: 10px; text-transform: uppercase; font-weight: normal; }
+ul, ol, li             { font-family: "Roboto", Helvetica, Arial, sans-serif; }
+
+/* Text styles */
+.content p { line-height: 25px; /* text-align: justify; */ /* text-indent: 20px; */ /* Indent body text's first line */ }
+.italic    { font-style: italic; }
+
+/* ---------------------------------------------------------------- */
+/* Paragraph styles
+/* ---------------------------------------------------------------- */
+
+/* Introduction paragraph */
+p.intro {
+	margin-bottom: 40px;
+}
+p.intro {
+	font-size: 19px;
+	font-weight: 700;
+	line-height: 30px;
+}
+
+/* And for the blog page... */
+#main.blog .intro {
+	margin-bottom: 10px;
+}
+
+/* Summary/conclusion paragraph */
+.after-content {
+	margin-top:  50px;
+	padding-top: 30px;
+}
+.after-content p {
+/* 	font-size: 19px; */
+	font-weight: 700;
+	line-height: 30px;
+}
+
+/* Titles with subheadings */
+h2.with-subheading {
+	margin-bottom: 0px;
+}
+h3.subheading {
+	margin-top: 0px;
+	font-size: 12px;
+	font-style: italic;
+}
+
+/* Quotes and citations */
+.content .blockquote {
+	margin:  40px 20px 0px 20px;
+	margin: 20px;
+	padding:  2px 20px;
+	/* border-radius: 10px; */ /* Creates a nice 'bracket' style left border */
+}
+.content .blockquote p {
+	font-style: italic;
+	font-family: "Garamond", Times, serif;
+	font-family: 'Rokkitt', serif;
+	font-family: 'Boogaloo', cursive;
+	font-family: 'Coda', cursive;
+	font-size: 24px;
+	
+	font-size: 18px;
+	margin: 10px 0px 10px 0px;
+/* 	text-indent: 1em; */
+}
+.content .citation p {
+	font-style: normal;
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	margin-top: 0px;
+	
+	text-transform: uppercase;
+	font-size: 12px;
+}
+.content .citation.left    { margin:  0px 70px 40px 45px; }
+.content .citation.right   { margin:  0px 70px 40px 70px; }
+.content .citation.left  p { text-align: left;  }
+.content .citation.right p { text-align: right; }
+
+/* ---------------------------------------------------------------- */
+/* Links
+/* ---------------------------------------------------------------- */
+
+a:link           { text-decoration: none; }
+a:visited        { text-decoration: none; }
+a:hover          { text-decoration: none; }
+a:active         { text-decoration: none; }
+
+footer a:link    { text-decoration: underline; }
+footer a:visited { text-decoration: underline; }
+footer a:hover   { text-decoration: underline; }
+footer a:active  { text-decoration: underline; }
+
+#main p a        { font-weight: 700; }
+
+
+/* ---------------------------------------------------------------- */
+/* Page layout and sections setup
+/* ---------------------------------------------------------------- */
+
+body {
+	margin:  0px;
+	padding: 0px;
+}
+
+#page {
+	margin:  20px auto 20px auto;
+	padding: 0px;
+}
+
+#main {
+	margin:  0px 0px 40px 0px;
+	padding: 20px;
+}
+
+/* ------------------------- */
+/* Set the maximum page size */
+/* ------------------------- */
+
+/*
+	The page section will be centred on the screen, unless the screen 
+	is less than the maximum set here, in which case it will fill the
+	space available.
+*/
+
+#page, #main {
+	max-width:    1000px;
+	margin-left:  auto;
+	margin-right: auto;
+}
+
+/* ---------------------------------------------------------------- */
+/* Header
+/* ---------------------------------------------------------------- */
+
+header {
+	margin:  0px;
+	padding: 10px 20px 10px 20px;
+	
+	background-color: #999ba2;
+}
+
+header h1 {
+	text-align:     center;
+	word-break:     break-word;
+	margin-bottom:  0px;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	
+	color: #fff;
+}
+
+header h2 {
+	margin-top:    0px;
+	margin-bottom: 0px;
+	text-align:    center;
+	
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	
+	color: #fff;
+}
+
+
+/* ---------------------------------------------------------------- */
+/* Footer
+/* ---------------------------------------------------------------- */
+
+footer {
+	padding: 20px;
+	
+	background-color: #999ba2;
+}
+
+footer.site-footer {
+	margin:  0px;
+	padding: 10px 0px;
+	width:   100%;
+}
+
+footer p {
+	font-size:   10px;
+	text-align:  center;
+	text-indent: 0px;
+	
+	letter-spacing: 1px;
+	
+	/* So there's not too much spacing between this and Hello to Jason Isaacs. */
+	margin-top:    6px;
+	margin-bottom: 3px;
+	
+	color: #fff;
+}
+
+/* -------------------------------- */
+/* To keep footer at bottom of page */
+/* -------------------------------- */
+
+html, body {
+	margin:  0;
+	padding: 0;
+	height:  100%;
+}
+#wrapper {
+	min-height: 100%;
+	position:   relative;
+}
+#page {
+	padding-bottom: 80px; /* This needs to be the same as your footer.site-footer height. */ /* This size is required for two-line footers */
+	padding-bottom: 40px; /* This needs to be the same as your footer.site-footer height. */
+}
+footer.site-footer {
+	height:   80px; /* This needs to be the same as the #page padding-bottom. */ /* This size is required for two-line footers */
+	height:   40px; /* This needs to be the same as the #page padding-bottom. */
+	position: absolute;
+	bottom:   0;
+	left:     0;
+}
+
+/* ---------------------------------------------------------------- */
+/* Sections
+/* ---------------------------------------------------------------- */
+
+.section {
+	background-color: #edf;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.section.last {
+	margin-bottom: 40px;
+}
+
+#down-to-earth {
+	
+}
+
+#about {
+	
+}
