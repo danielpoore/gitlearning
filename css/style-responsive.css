@@ -16,6 +16,10 @@
 /* Fonts
 /* ---------------------------------------------------------------- */
 
+/* Text styles */
+.content p { line-height: 25px; /* text-align: justify; */ /* text-indent: 20px; */ /* Indent body text's first line */ }
+.italic    { font-style: italic; }
+
 h1 { font-size: 24px; }
 h2 { font-size: 16px; }
 h3 { font-size: 18px; }
@@ -23,16 +27,16 @@ h4 { font-size: 16px; }
 h5 { font-size: 14px; }
 h6 { font-size: 12px; }
 
-/* Google fonts */
+
+/* ---------------------------------------------------------------- */
+/* Google Fonts
+/* ---------------------------------------------------------------- */
+
 h1, h2, h3, h4, h5, h6 { font-family: 'Coda', cursive; font-style: italic; margin-top: 10px; margin-bottom: 10px; text-transform: uppercase; font-weight: normal; }
 p                      { font-family: "Roboto", Helvetica, Arial, sans-serif; }
 nav p                  { font-family: 'Coda', cursive; margin-top: 10px; margin-bottom: 10px; text-transform: uppercase; font-weight: normal; }
 footer p               { font-family: 'Coda', cursive; margin-top: 10px; margin-bottom: 10px; text-transform: uppercase; font-weight: normal; }
 ul, ol, li             { font-family: "Roboto", Helvetica, Arial, sans-serif; }
-
-/* Text styles */
-.content p { line-height: 25px; /* text-align: justify; */ /* text-indent: 20px; */ /* Indent body text's first line */ }
-.italic    { font-style: italic; }
 
 /* ---------------------------------------------------------------- */
 /* Links
@@ -48,7 +52,7 @@ footer a:visited { text-decoration: underline; }
 footer a:hover   { text-decoration: underline; }
 footer a:active  { text-decoration: underline; }
 
-p a.             { font-weight: 700; }
+p a              { font-weight: bold; }
 
 
 /* ---------------------------------------------------------------- */
@@ -98,7 +102,6 @@ header h2 {
 /* ---------------------------------------------------------------- */
 
 nav {
-	background-color: #6a7b90;
 	padding: 20px 0px 36px 0px;
 	width: 490px;
 	margin-left:  auto;
@@ -117,14 +120,7 @@ nav div {
 	border-radius: 50%;
 	width:  60px;
 	height: 60px;
-	border: 2px solid #72849b;
 }
-
-nav div#nav1 { background-color: #6a7b90; }
-nav div#nav2 { background-color: #6a7b90; }
-nav div#nav3 { background-color: #6a7b90; }
-nav div#nav4 { background-color: #6a7b90; }
-nav div#nav5 { background-color: #6a7b90; }
 
 /* ---------------------------------------------------------------- */
 /* Footer
@@ -132,8 +128,6 @@ nav div#nav5 { background-color: #6a7b90; }
 
 footer {
 	padding: 20px;
-	
-	background-color: #6a7b90;
 }
 
 footer.site-footer {
@@ -143,7 +137,7 @@ footer.site-footer {
 }
 
 footer p {
-	font-size:   10px;
+	font-size:   20px;
 	text-align:  center;
 	text-indent: 0px;
 	
@@ -161,14 +155,17 @@ footer p {
 }
 
 .section .content {
-	padding: 20px;
-	max-width: 1000px;
-	margin-left: auto;
-	margin-right: auto;
+	padding:        20px;
+	max-width:    1000px;
+	margin-left:    auto;
+	margin-right:   auto;
 }
 
 .section h2 { font-size: 30px; }
 .section p  { font-size: 20px; }
+
+
+/* Do we want these? */
 
 .section .content .left-45  { float: left;  width: 45%; }
 .section .content .right-45 { float: right; width: 45%; }

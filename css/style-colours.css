@@ -1,0 +1,84 @@
+/* ---------------------------------------------------------------------------------------- */
+/* - INFORMATION -------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+/*   
+/*   This file should contain only elements' colour information.
+/*   It may contain attributes like borders, where the borders'
+/*   colours are specified.
+/*
+/* ---------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- INFORMATION - */
+/* ---------------------------------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------------- */
+/* Main page sections
+/* ---------------------------------------------------------------- */
+
+header, footer {
+	background-color: #6a7b90;
+}
+
+/* ---------------------------------------------------------------- */
+/* Navigation buttons
+/* ---------------------------------------------------------------- */
+
+nav           { background-color: #6a7b90; }
+
+nav div       { border: 2px solid #72849b; }
+
+nav div#nav1  { background-color: #6a7b90; }
+nav div#nav2  { background-color: #6a7b90; }
+nav div#nav3  { background-color: #6a7b90; }
+nav div#nav4  { background-color: #6a7b90; }
+nav div#nav5  { background-color: #6a7b90; }
+
+nav div#nav1:hover { background-color: #6b819b; }
+nav div#nav2:hover { background-color: #6b819b; }
+nav div#nav3:hover { background-color: #6b819b; }
+nav div#nav4:hover { background-color: #6b819b; }
+nav div#nav5:hover { background-color: #6b819b; }
+
+
+/* ---------------------------------------------------------------- */
+/* Headings and text
+/* ---------------------------------------------------------------- */
+
+/* General headings and text */
+
+h1                 { color: #bada55; }
+h2, h3, h4, h5, h6 { color: #bada55; }
+p                  { color: #6a7b90; }
+ul, ol, li         { color: #6a7b90; }
+
+/* ---------------------------------------------------------------- */
+/* Links
+/* ---------------------------------------------------------------- */
+
+a:link           { color: #6a7b90; }
+a:visited        { color: #6a7b90; }
+a:hover          { color: #5eabed; }
+a:active         { color: #bada55; }
+
+/* ---------------------------------------------------------------- */
+/* Sections
+/* ---------------------------------------------------------------- */
+
+.style1    { background-color: #ffffff; }
+.style2    { background-color: #c3d9db; }
+.style3    { background-color: #ffffff; }
+.style4    { background-color: #9cbcb9; }
+.style4    { background-color: #ffffff; }
+
+.style1 h2 { color:            #85bff1; }
+.style2 h2 { color:            #5eabed; }
+.style3 h2 { color:            #85bff1; }
+.style4 h2 { color:            #2e576e; }
+.style4 h2 { color:            #85bff1; }
+
+.style1 p  { color:            #6a7b90; }
+.style2 p  { color:            #6a7b90; }
+.style3 p  { color:            #6a7b90; }
+.style4 p  { color:            #485a70; }
+.style4 p  { color:            #6a7b90; }
