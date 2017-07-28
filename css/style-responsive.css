@@ -35,7 +35,7 @@ h6 { font-size: 12px; }
 h1, h2, h3, h4, h5, h6 { font-family: 'Coda', cursive; font-style: italic; margin-top: 10px; margin-bottom: 10px; text-transform: uppercase; font-weight: normal; }
 p                      { font-family: "Roboto", Helvetica, Arial, sans-serif; }
 nav p                  { font-family: 'Coda', cursive; margin-top: 10px; margin-bottom: 10px; text-transform: uppercase; font-weight: normal; }
-footer p               { font-family: 'Coda', cursive; margin-top: 10px; margin-bottom: 10px; text-transform: uppercase; font-weight: normal; }
+footer p               { font-family: 'Coda', cursive; margin-top: 10px; margin-bottom: 10px; font-weight: normal; }
 ul, ol, li             { font-family: "Roboto", Helvetica, Arial, sans-serif; }
 
 /* ---------------------------------------------------------------- */
@@ -137,12 +137,11 @@ footer.site-footer {
 }
 
 footer p {
-	font-size:   20px;
+	font-size:   16px;
 	text-align:  center;
 	text-indent: 0px;
-	
+	font-style: italic;
 	letter-spacing: 1px;
-	
 	color: #fff;
 }
 
@@ -150,9 +149,11 @@ footer p {
 /* Sections
 /* ---------------------------------------------------------------- */
 
-.section {
-	width: 100%;
-}
+/* All sections */
+
+.section    { width:     100%; }
+.section h2 { font-size: 30px; }
+.section p  { font-size: 20px; }
 
 .section .content {
 	padding:        20px;
@@ -161,9 +162,45 @@ footer p {
 	margin-right:   auto;
 }
 
-.section h2 { font-size: 30px; }
-.section p  { font-size: 20px; }
+/* Individual sections */
 
+#intro.section     { background-color: #ffffff;     }
+#intro.section h2  { color:            #5eabed;     } /* Seabed */
+#intro.section p   { color:            #8ba6a8;     } /* Dark sand green */
+#intro p           { font-weight: bold;             }
+
+#chara.section     { background-color: #c3d9db;     } /* Ice blue */
+#chara.section h2  { color:            #5eabed;     } /* Seabed */
+#chara.section p   { color:            #6a7b90;     } /* Dark sand green */
+#chara p           { font-weight: bold;             }
+
+#maria.section     { background-color: #2b3031;     } /* Charcoal */
+#maria.section h2  { color:            #5eabed;     } /* Seabed */
+#maria.section p   { color:            #a0d6d3;     } /* Readout green */
+#about a           { color: #e5f4e9;                } /* Glowworm green */
+#maria p           { font-weight: bold;             }
+
+#sequel.section    { background-color: transparent; } /* Charcoal */
+#sequel.section h2 { color:            #fd207c;     } /* Red alert */
+#sequel.section p  { color:            #ffffff;     } /* Readout green */
+#sequel a          { color: #e5f4e9;                } /* Glowworm green */
+#sequel p          { font-weight: bold;             }
+
+#about.section     { background-color: #2b3031;     } /* Charcoal */
+#about.section h2  { color:            #5eabed;     } /* Seabed */
+#about.section p   { color:            #a0d6d3;     } /* Readout green */
+#about a:link      { color:            #e5f4e9;     } /* Glowworm green */
+#about a:hover     { color:            #5eabed;     } /* Seabed */
+#about p           { font-weight: bold;             }
+
+
+
+
+.hazard {
+	height: 20px;
+	width: 100%;
+	background-image: url("../images/hazard.jpg");
+}
 
 /* Do we want these? */
 
