@@ -38,11 +38,11 @@ h6 { font-size: 12px; }
 /* Google Fonts
 /* ---------------------------------------------------------------- */
 
-h1                 { font-family: 'Coda', cursive; font-style: italic; margin-top:  0px; text-transform: uppercase; font-weight: normal; }
-h2, h3, h4, h5, h6 { font-family: 'Coda', cursive; font-style: italic; margin-top: 10px; margin-bottom: 10px; text-transform: uppercase; font-weight: normal; }
+h1                 { font-family: "Coda", cursive; font-style: italic; margin-top:  0px; text-transform: uppercase; font-weight: normal; }
+h2, h3, h4, h5, h6 { font-family: "Coda", cursive; font-style: italic; margin-top: 10px; margin-bottom: 10px; text-transform: uppercase; font-weight: normal; }
 p                  { font-family: "Roboto", Helvetica, Arial, sans-serif; }
-nav p              { font-family: 'Coda', cursive; margin-top: 10px; margin-bottom: 10px; text-transform: uppercase; font-weight: normal; }
-footer p           { font-family: 'Coda', cursive; margin-top: 10px; margin-bottom: 10px; font-weight: normal; }
+nav p              { font-family: "Coda", cursive; margin-top: 10px; margin-bottom: 10px; text-transform: uppercase; font-weight: normal; }
+footer p           { font-family: "Roboto", cursive; margin-top: 10px; margin-bottom: 10px; font-weight: normal; }
 ul, ol, li         { font-family: "Roboto", Helvetica, Arial, sans-serif; }
 
 /* ---------------------------------------------------------------- */
@@ -68,7 +68,6 @@ p a              { font-weight: bold; }
 
 body {
 	margin:  0px;
-	padding: 0px;
 }
 
 /* ---------------------------------------------------------------- */
@@ -78,29 +77,23 @@ body {
 header {
 	margin:  0px;
 	padding: 20px 20px 20px 20px;
-	
 	background-color: #6a7b90;
 }
 
-header h1 {
+header h1, header h2 {
 	text-align:     center;
-	word-break:     break-word;
-	margin-bottom:  0px;
 	text-transform: uppercase;
 	letter-spacing: 5px;
-	
-	color: #fff;
+	margin-bottom:  0px;
+	color:          #fff;
+}
+
+header h1 {
+	word-break: break-word;
 }
 
 header h2 {
-	margin-top:    0px;
-	margin-bottom: 0px;
-	text-align:    center;
-	
-	text-transform: uppercase;
-	letter-spacing: 5px;
-	
-	color: #fff;
+	margin-top: 0px;
 }
 
 /* ---------------------------------------------------------------- */
@@ -134,33 +127,40 @@ nav div {
 
 footer {
 	padding: 20px;
+	min-height: 200px;
 }
 
-footer.site-footer {
-	margin:  0px;
-	padding: 10px 0px;
-	width:   100%;
+footer {
+		background-image: linear-gradient( to top, #6a7b90, #536173 25%, #6b7c91 25%, #6f7f92 85%, #607083 90%, #424b57 95%, #a2b2c6 95% );
 }
 
 footer p {
-	font-size:   16px;
+	font-size:   14px;
 	text-align:  center;
 	text-indent: 0px;
-	font-style: italic;
-	letter-spacing: 1px;
-	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+/* 	font-style: italic; */
+/* 	letter-spacing: 1px; */
+	color: #afcaec;
+	
+/* 	text-shadow: 0px -1px #536173; */
+
+}
+
+footer #social-media {
+	width: 48px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* ---------------------------------------------------------------- */
 /* Sections
 /* ---------------------------------------------------------------- */
 
-/* All sections */
+.section { width: 100%; }
 
-.section    { width:     100%; }
-.section h2 { font-size: 30px; }
-.section p  { font-size: 20px; }
-
+/* Set standard size for section content containers and centre them horizontally. */
 .section .content {
 	padding:        20px;
 	max-width:    1000px;
@@ -168,39 +168,62 @@ footer p {
 	margin-right:   auto;
 }
 
-/* Individual sections */
+/* Set starndard font sizes for all sections. */
+.section h2 { font-size: 30px; }
+.section p  { font-size: 20px; }
 
-#intro.section     { background-color: #ffffff;     }
+/* ---------------------------------------------------------------- */
+/* Section styles
+/* ---------------------------------------------------------------- */
+
+/* Intro section */
+#intro.section     { background-color: #ffffff;     } /* White */
 #intro.section h2  { color:            #5eabed;     } /* Seabed */
+#intro a:link      { color:            #5eabed;     } /* Seabed */
+#intro a:visited   { color:            #5eabed;     } /* Seabed */
+#intro a:hover     { color:            #e5f4e9;     } /* Glowworm green */
 #intro.section p   { color:            #8ba6a8;     } /* Dark sand green */
 #intro p           { font-weight: bold;             }
 
+/* Characters section */
 #chara.section     { background-color: #c3d9db;     } /* Ice blue */
 #chara.section h2  { color:            #5eabed;     } /* Seabed */
+#chara a:link      { color:            #5eabed;     } /* Seabed */
+#chara a:visited   { color:            #5eabed;     } /* Seabed */
+#chara a:hover     { color:            #e5f4e9;     } /* Glowworm green */
 #chara.section p   { color:            #6a7b90;     } /* Dark sand green */
 #chara p           { font-weight: bold;             }
 
+/* Santa Maria section */
 #maria.section     { background-color: #2b3031;     } /* Charcoal */
 #maria.section h2  { color:            #5eabed;     } /* Seabed */
+#maria a:link      { color:            #5eabed;     } /* Seabed */
+#maria a:visited   { color:            #5eabed;     } /* Seabed */
+#maria a:hover     { color:            #e5f4e9;     } /* Glowworm green */
 #maria.section p   { color:            #a0d6d3;     } /* Readout green */
-#about a           { color: #e5f4e9;                } /* Glowworm green */
 #maria p           { font-weight: bold;             }
 
-#sequel.section    { background-color: transparent; }
+/* Sequel section */
+#sequel.section    { background-color: transparent; } /* Transparent */
 #sequel.section h2 { color:            #fd207c;     } /* Red alert */
-#sequel.section p  { color:            #ffffff;     } /* Readout green */
-#sequel a          { color:            #e44d8c;     }
+#sequel a:link     { color:            #fd207c;     } /* Red alert */
+#sequel a:visited  { color:            #fd207c;     } /* Red alert */
+#sequel a:hover    { color:            #a0d6d3;     } /* Readout green */
+#sequel.section p  { color:            #ffffff;     } /* White */
 #sequel p          { font-weight: bold;             }
 
+/* About section */
 #about.section     { background-color: #2b3031;     } /* Charcoal */
 #about.section h2  { color:            #5eabed;     } /* Seabed */
+#about a:link      { color:            #5eabed;     } /* Seabed */
+#about a:visited   { color:            #5eabed;     } /* Seabed */
+#about a:hover     { color:            #e5f4e9;     } /* Glowworm green */
 #about.section p   { color:            #a0d6d3;     } /* Readout green */
-#about a:link      { color:            #e5f4e9;     } /* Glowworm green */
-#about a:hover     { color:            #5eabed;     } /* Seabed */
 #about p           { font-weight: bold;             }
 
-
-
+/* ---------------------------------------------------------------- */
+/* Sections design elements
+/* ---------------------------------------------------------------- */
 
 .hazard {
 	height: 20px;
