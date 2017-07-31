@@ -41,7 +41,7 @@ h6 { font-size: 12px; }
 h1                 { font-family: "Coda", cursive; font-style: italic; margin-top:  0px; text-transform: uppercase; font-weight: normal; }
 h2, h3, h4, h5, h6 { font-family: "Coda", cursive; font-style: italic; margin-top: 10px; margin-bottom: 10px; text-transform: uppercase; font-weight: normal; }
 p                  { font-family: "Roboto", Helvetica, Arial, sans-serif; }
-nav p              { font-family: "Coda", cursive; margin-top: 10px; margin-bottom: 10px; text-transform: uppercase; font-weight: normal; }
+nav p              { font-family: "Roboto", cursive; text-transform: uppercase; font-weight: bold; }
 footer p           { font-family: "Roboto", cursive; margin-top: 10px; margin-bottom: 10px; font-weight: normal; }
 ul, ol, li         { font-family: "Roboto", Helvetica, Arial, sans-serif; }
 
@@ -117,18 +117,35 @@ nav div {
 	margin-right: 5px;
 	float: left;
 	
-	border-radius: 50%;
+	border-radius: 4px;
 	width:  60px;
-	height: 60px;
+	height: 40px;
 	
-	background-color: #6a7b90;
+	background-color: #505f70;
 }
 
 .nav-button p {
 	color: #fff;
 	text-align: center;
-	padding-top: 9px;
-	font-size: 12px;
+	padding-top: 0px;
+	font-size: 14px;
+}
+
+.next-button {
+	width: 120px;
+	height: 40px;
+	
+	float: right;
+	text-align: center;
+	
+	box-shadow: inset 1px 1px 4px #ccc;
+	
+	border-radius: 6px;
+}
+.section .next-button p {
+	margin: 8px 0px 0px 0px;
+	text-transform: uppercase;
+	font-size: 14px;
 }
 
 /* ---------------------------------------------------------------- */
@@ -188,49 +205,60 @@ footer #social-media {
 /* ---------------------------------------------------------------- */
 
 /* Intro section */
-#intro.section     { background-color: #ffffff;     } /* White */
-#intro.section h2  { color:            #5eabed;     } /* Seabed */
-#intro a:link      { color:            #5eabed;     } /* Seabed */
-#intro a:visited   { color:            #5eabed;     } /* Seabed */
-#intro a:hover     { color:            #fd207c;     } /* Red alert */
-#intro.section p   { color:            #8ba6a8;     } /* Dark sand green */
-#intro p           { font-weight: bold;             }
+#intro.section              { background-color: #ffffff;     } /* White */
+#intro.section h2           { color:            #5eabed;     } /* Seabed */
+#intro a:link               { color:            #5eabed;     } /* Seabed */
+#intro a:visited            { color:            #5eabed;     } /* Seabed */
+#intro a:hover              { color:            #fd207c;     } /* Red alert */
+#intro.section p            { color:            #8ba6a8;     } /* Dark sand green */
+#intro p                    { font-weight: bold;             }
+
+#intro .next-button         { background-color: #ffffff;     } /* Off white */
+#intro .next-button:hover   { background-color: #eaf4f9;     } /* Off white */
+#intro .next-button p       { color:            #fff;     } /* Off white */
+#intro .next-button:hover p { color:            #fd207c;     } /* Off white */
+#intro .next-button p       { text-shadow: 0px -1px 0px #333; } /* Off white */
 
 /* Characters section */
-#chara.section     { background-color: #c3d9db;     } /* Ice blue */
-#chara.section h2  { color:            #5eabed;     } /* Seabed */
-#chara a:link      { color:            #5eabed;     } /* Seabed */
-#chara a:visited   { color:            #5eabed;     } /* Seabed */
-#chara a:hover     { color:            #fd207c;     } /* Red alert */
-#chara.section p   { color:            #6a7b90;     } /* Dark sand green */
-#chara p           { font-weight: bold;             }
+#chara.section              { background-color: #c3d9db;     } /* Ice blue */
+#chara.section h2           { color:            #5eabed;     } /* Seabed */
+#chara a:link               { color:            #5eabed;     } /* Seabed */
+#chara a:visited            { color:            #5eabed;     } /* Seabed */
+#chara a:hover              { color:            #fd207c;     } /* Red alert */
+#chara.section p            { color:            #6a7b90;     } /* Dark sand green */
+#chara p                    { font-weight: bold;             }
+
+#chara .next-button         { background-color: #c3d9db; } /* Off white */
+#chara .next-button:hover   { background-color: #abc1c3; } /* Off white */
+#chara .next-button p       { color: #5eabed;            } /* Off white */
+#chara .next-button:hover p { color: #fd207c;            } /* Off white */
 
 /* Santa Maria section */
-#maria.section     { background-color: #2b3031;     } /* Charcoal */
-#maria.section h2  { color:            #5eabed;     } /* Seabed */
-#maria a:link      { color:            #5eabed;     } /* Seabed */
-#maria a:visited   { color:            #5eabed;     } /* Seabed */
-#maria a:hover     { color:            #e5f4e9;     } /* Glowworm green */
-#maria.section p   { color:            #a0d6d3;     } /* Readout green */
-#maria p           { font-weight: bold;             }
+#maria.section              { background-color: #2b3031;     } /* Charcoal */
+#maria.section h2           { color:            #5eabed;     } /* Seabed */
+#maria a:link               { color:            #5eabed;     } /* Seabed */
+#maria a:visited            { color:            #5eabed;     } /* Seabed */
+#maria a:hover              { color:            #e5f4e9;     } /* Glowworm green */
+#maria.section p            { color:            #a0d6d3;     } /* Readout green */
+#maria p                    { font-weight: bold;             }
 
 /* Book 2 section */
-#book2.section    { background-color: transparent; } /* Transparent */
-#book2.section h2 { color:            #fd207c;     } /* Red alert */
-#book2 a:link     { color:            #fd207c;     } /* Red alert */
-#book2 a:visited  { color:            #fd207c;     } /* Red alert */
-#book2 a:hover    { color:            #a0d6d3;     } /* Readout green */
-#book2.section p  { color:            #ffffff;     } /* White */
-#book2 p          { font-weight: bold;             }
+#book2.section              {  background-color: transparent; } /* Transparent */
+#book2.section h2           {  color:            #fd207c;     } /* Red alert */
+#book2 a:link               {  color:            #fd207c;     } /* Red alert */
+#book2 a:visited            {  color:            #fd207c;     } /* Red alert */
+#book2 a:hover              {  color:            #a0d6d3;     } /* Readout green */
+#book2.section p            {  color:            #ffffff;     } /* White */
+#book2 p                    {  font-weight: bold;             }
 
 /* About section */
-#about.section     { background-color: #2b3031;     } /* Charcoal */
-#about.section h2  { color:            #5eabed;     } /* Seabed */
-#about a:link      { color:            #5eabed;     } /* Seabed */
-#about a:visited   { color:            #5eabed;     } /* Seabed */
-#about a:hover     { color:            #e5f4e9;     } /* Glowworm green */
-#about.section p   { color:            #a0d6d3;     } /* Readout green */
-#about p           { font-weight: bold;             }
+#about.section              { background-color: #2b3031;     } /* Charcoal */
+#about.section h2           { color:            #5eabed;     } /* Seabed */
+#about a:link               { color:            #5eabed;     } /* Seabed */
+#about a:visited            { color:            #5eabed;     } /* Seabed */
+#about a:hover              { color:            #e5f4e9;     } /* Glowworm green */
+#about.section p            { color:            #a0d6d3;     } /* Readout green */
+#about p                    { font-weight: bold;             }
 
 /* ---------------------------------------------------------------- */
 /* Sections design elements
