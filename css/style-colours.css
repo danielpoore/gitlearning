@@ -24,6 +24,7 @@ header {
 /* Navigation buttons
 /* ---------------------------------------------------------------- */
 
+/*
 nav           { background-color: #6a7b90; }
 
 nav div       { border: 2px solid #72849b; }
@@ -39,6 +40,7 @@ nav div#nav2:hover { background-color: #6b819b; }
 nav div#nav3:hover { background-color: #6b819b; }
 nav div#nav4:hover { background-color: #6b819b; }
 nav div#nav5:hover { background-color: #6b819b; }
+*/
 
 
 /* ---------------------------------------------------------------- */
@@ -93,9 +95,9 @@ body {
 */
 
 html { 
-  background: url("../images/starfield.jpg") no-repeat center center fixed; 
+/*   background: url("../images/starfield.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover; */
 }

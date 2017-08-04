@@ -4,19 +4,6 @@
 		
 		<title>Daniel Poore | Author of Down To Earth</title>
 		
-		<!-- Attach my JavaScript files -->
-		<script type="text/javascript" src="http://danielpoore.com/wp-content/themes/dp/js/really-useful-functions.js"></script>
-		
-		<!-- Add jQuery -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		
-		<!-- Link to Google fonts you want to use -->
-		<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Roboto:900,900italic,700,700italic,300,300italic' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Boogaloo' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Coda' rel='stylesheet' type='text/css'>
-		
 		<!-- Metadata -->
 		<meta name="viewport"           content="width=device-width" />
 		<meta name="author"             content="Daniel Poore" />
@@ -24,125 +11,113 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		
+		<!-- Attach my JavaScript files -->
+		<script type="text/javascript" src="js/really-useful-functions.js"></script>
+		
+		<!-- Add jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
+		<!-- Link to Google fonts you want to use -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:900,900italic,700,700italic,300,300italic" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Coda" rel="stylesheet" type="text/css">
 		
 		<!-- Stylesheets -->
 		<link rel="stylesheet" id="style-colours-css"         href="css/style-colours.css"         type="text/css" media="all">
 		<link rel="stylesheet" id="style-responsive-css"      href="css/style-responsive.css"      type="text/css" media="all">
-		<link rel="stylesheet" id="style-responsive-0320-css" href="css/style-responsive-0320.css" type="text/css" media="all">
-		<link rel="stylesheet" id="style-responsive-0480-css" href="css/style-responsive-0480.css" type="text/css" media="all">
-		<link rel="stylesheet" id="style-responsive-0720-css" href="css/style-responsive-0720.css" type="text/css" media="all">
 		<link rel="stylesheet" id="style-responsive-1000-css" href="css/style-responsive-1000.css" type="text/css" media="all">
-
-
+		<link rel="stylesheet" id="style-responsive-0720-css" href="css/style-responsive-0720.css" type="text/css" media="all">
+		<link rel="stylesheet" id="style-responsive-0480-css" href="css/style-responsive-0480.css" type="text/css" media="all">
+		<link rel="stylesheet" id="style-responsive-0320-css" href="css/style-responsive-0320.css" type="text/css" media="all">
+		
+		<!-- jQuery code for scrolling to anchors -->
 		<script>
-			$(document).ready(function(){
-				// Add smooth scrolling to all links
-				$("a").on('click', function(event) {
-			
-			  		// Make sure this.hash has a value before overriding default behavior
-					if (this.hash !== "") {
-						// Prevent default anchor click behavior
-				  		event.preventDefault();
-			
-				  		// Store hash
-				  		var hash = this.hash;
-			
-				  		// Using jQuery's animate() method to add smooth page scroll
-				  		// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-				  		$('html, body').animate({
-				  			scrollTop: $(hash).offset().top
-						}, 800, function(){
-			   
-				  			// Add hash (#) to URL when done scrolling (default click behavior)
-							window.location.hash = hash;
-						});
-					} // End if
-				});
-			});
+			$(document).ready(function(){ $("a").on("click", function(event) { if (this.hash !== "") { event.preventDefault(); var hash = this.hash; $("html, body").animate({ scrollTop: $(hash).offset().top-50 }, 800, function(){ window.location.hash = hash; }); } }); });
 		</script>
-
-
+		
 	</head>
 	
 	<body>
 		
+		<div id="uptop"></div>
+		
+		<div id="starry-starry-night"></div>
+		
+		<nav>
+			<div class="container">
+				<a href="#uptop"><div class="button"><p>Home</p></div></a>
+				<a href="#chara"><div class="button"><p>Crew</p></div></a>
+				<a href="#maria"><div class="button"><p>Ship</p></div></a>
+				<a href="#about"><div class="button"><p>About</p></div></a>
+			</div>
+		</nav>
+		
 		<header>
 			<h1>DANIEL POORE</h1>
 			<h2>AUTHOR OF DOWN TO EARTH</h2>
-			
-<!--
-			<nav>
-				<a href="#intro"><div class="nav-button"><p>Book</p></div></a>
-				<a href="#chara"><div class="nav-button"><p>Crew</p></div></a>
-				<a href="#maria"><div class="nav-button"><p>Ship</p></div></a>
-				<a href="#book2"><div class="nav-button"><p>Sequel</p></div></a>
-				<a href="#about"><div class="nav-button"><p>About</p></div></a>
-			</nav>
--->
 		</header>
 		
-		<div id="intro" class="section">
+		<div id="earth" class="section">
 			<div class="content">
-				
-				<div class="lozenge">
-					<p><span class="red">FOR SALE:</span> forty-million square kilometres of undeveloped land with minimal planning restrictions.</p>
+				<div class="advert">
+					<p class="for-sale">FOR SALE</p>
+					<p class="blurb">A unique opportunity to acquire forty-million square kilometres of vacant land. Minimal planning restrictions and gravity.</p>
+					<p class="price">Price on application</p>
 				</div>
-				
-				<p>It’s the year 2078 and Earth’s global population has reached ten billion. With accommodation in ever shortening supply, house prices are through the ceiling and into the overcrowded apartment upstairs. It’s a great time to be an estate agent and <a href="#chara">Marlow Harvey</a> works for one of the three biggest agencies on the planet. He should be drowning in commission but, unfortunately for Marlow, he suffers from a debilitating condition: pathological honesty.</p>
-				
-<!-- 				<a href="#chara"><div class="next-button"><p>Crew</p></div><div class="clearboth"></div></a> -->
+				<div class="intro">
+					<p>It&rsquo;s the year 2078 and Earth&rsquo;s global population has reached ten billion. With accommodation in ever shortening supply, house prices are through the ceiling and into the overcrowded apartment upstairs. It&rsquo;s a great time to be an estate agent and <a href="#marlow">Marlow Harvey</a> works for one of the three biggest agencies on the planet. He should be drowning in commission but, unfortunately for Marlow, he suffers from a debilitating condition: pathological honesty.</p>
+				</div>
+				<div class="clearboth"></div>
 			</div>
 		</div>
 		
 		<div id="chara" class="section">
 			<div class="content">
+				<div id="julia"></div>
+				<h3>Dr. Julia Lowe</h3>
+				<p>Julia Lowe is both the Mission&rsquo;s commander and the ship&rsquo;s doctor. Enthusiastic and full of encouragement, she leads the crew through the chain of events that result in them leaving the Solar System and landing on an alien world.</p>
+				<div id="mollie"></div>
+				<h3>Dr. Mollie Sterling</h3>
+				<p>Mollie Sterling is a bit of an enigma. A mathematical genius from an early age, she lives in a world dominated by numbers, but largely empty of other human beings. Her work has involved the development of the gravity creation devices that make terraforming Earth&rsquo;s Moon possible.</p>
+				<div id="rupert"></div>
+				<h3>Prof. Rupert Heyman</h3>
+				<p>Only time (and escalators) will tell if Professor Heyman can overcome his self-doubt.</p>
+				<div id="marlow"></div>
+				<h3>Marlow Harvey</h3>
+				<p>Courageous. Adventurous. Indomitable. These are all words Marlow Harvey can spell. And he knows what sixty-seven percent of them mean. But he doesn&rsquo;t know how he became the first estate agent in deep space.</p>
+				<p>And he certainly doesn&rsquo;t know how to get home.</p>
 				<br />
-				<h2>Crew</h2>
-				<p>Courageous. Adventurous. Indomitable. These are all words Marlow Harvey can spell. And he knows what sixty-seven percent of them mean.</p>
-				<p>Marlow doesn’t like Mondays – they’re one of his seventh least favourite days of the week – and it was on a Monday that two gorilla-sized men “encouraged” him to meet with Mr. Black, a reclusive property developer.</p>
-				<p>And so began Marlow’s planet-hopping adventures on board the Santa Maria.</p>
-				<p>Julia Lowe is both the Mission’s commander and the ship’s doctor. Enthusiastic and full of encouragement, she leads the crew through the chain of events that result in them leaving the Solar System and landing on an alien world.</p>
-				<p>Mollie Sterling is a bit of an enigma. A mathematical genius from an early age, she lives in a world dominated by numbers, but largely empty of other human beings. Her work has involved the development of the gravity creation devices that make terraforming Earth’s Moon possible.</p>
 				<!-- <p>Although at home in the four-dimensional world of space travel, she is as much a fish out of water as Marlow is when it comes to dealing with the rest of the crew.</p> -->
 				<img src="images/characters.png" />
-<!-- 				<a href="#maria"><div class="next-button"><p>Ship</p></div><div class="clearboth"></div></a> -->
 			</div>
 		</div>
+		
+<!-- 		<div id="book2" class="section">
+			<div class="content">
+				<br /><br /><br />
+			</div>
+		</div> -->
 		
 		<div id="maria" class="section">
-			<div class="content">
-				<h2>The Santa Maria</h2>
-				<p>This all takes place aboard the <span class="italic glow">Santa Maria</span>, the only starship in the universe with its own coffee table.</p>
-				<p>Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<p>Click this <a href="#">link example</a> if you want.</p>
-				
-<!-- 				<a href="#book2"><div class="next-button"><p>Sequel</p></div><div class="clearboth"></div></a> -->
-			</div>
-		</div>
-		
-		<div id="book2" class="section">
 			<div class="hazard"></div>
 			<div class="content">
-				<h2>Synopsis</h2>
-				<p>It’s the year 2078 and Earth’s global population has reached ten billion. With accommodation in ever shortening supply, house prices are through the ceiling and into the overcrowded apartment upstairs. It’s a great time to be an estate agent and <a href="#section3">Marlow Harvey</a> works for one of the three biggest agencies on the planet. He should be drowning in commission but, unfortunately for Marlow, he suffers from a debilitating condition: pathological honesty.</p>
-				<p>Labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-<!-- 				<a href="#about"><div class="next-button"><p>About</p></div><div class="clearboth"></div></a> -->
+				<h2>The Santa Maria</h2>
+				<p>Twin hydrogen fusion drive engines. Four landing thrusters. Her own gravity-generating particle accelerator. Deep pile carpets in the cargo bay and the only coffee table on any spaceship in the known galaxy.</p>
 			</div>
 			<div class="hazard"></div>
 		</div>
 		
 		<div id="about" class="section">
-			
 			<div class="content">
 				<h2>About the author</h2>
 				<p>Daniel has a degree in Computer Studies and loves new technology. He speaks several languages, English being the only one spoken by other human beings. He lives near the fictional town of Penbridge in the South of England and, a fan of all things meta, he is currently writing what he mistakenly thinks is a witty bio about himself in the third person.</p>
-				<p>If you want to know more (although frankly it's unclear why you would, that all seemed pretty comprehensive) you can <a href="mailto:mail@danielpoore.com">contact him here</a>.
+				<p>If you want to know more (although frankly it&rsquo;s unclear why you would, that all seemed pretty comprehensive) you can <a href="mailto:hello@danielpoore.com">contact him here</a>.
 			</div>
 		</div>
 		
 		<footer>
-			<!-- <p>If you've enjoyed this website you'll be pleased to know I'm working on the sequel which currently has the working title 'Website 2.0'.</p> -->
+			<!-- <p>If you&rsquo;ve enjoyed this website you&rsquo;ll be pleased to know I&rsquo;m working on the sequel which currently has the working title &lsquo;Website 2.0&rsquo;.</p> -->
 			<div id="social-media">
 				<a href="https://twitter.com/danielpoore" target="_blank"><img src="images/twitter.png" /></a>
 			</div>
@@ -155,7 +130,7 @@
 			
 			<noscript>
 				<p>&copy; 2009 - 2017 Daniel Poore. All rights reserved.</p>
-				<p>(Psst! Did you know you've got JavaScript disabled?)</p>
+				<p>(Psst! Did you know you&rsquo;ve got JavaScript disabled?)</p>
 			</noscript>
 		</footer>
 		

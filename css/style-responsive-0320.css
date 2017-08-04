@@ -20,4 +20,15 @@
 	
 	.section .content { max-width: 320px; }
 	
+	/* ---------------------------------------------------------------- */
+	/* For Sale advert
+	/* ---------------------------------------------------------------- */
+	
+	.advert {
+		float: none;
+		margin-left: 0px;
+		max-width: 100%;
+		margin-bottom: 30px;
+	}
+	
 }
